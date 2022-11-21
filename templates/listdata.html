@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='gaya.css')}}">
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h1>List Data Mahasiswa</h1>
+      <ul>
+        <li><a href="{{ url_for('home')}}">Home</a></li>
+        <li><a href="{{ url_for('tambahdata')}}">Tambah Data</a></li>
+        <li><a href="{{ url_for('listdata')}}" class="active">List Data</a></li>
+        <li><a href="{{ url_for('loginmhs')}}">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <table class="styled-table">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>Tgl Lahir</th>
+                <th>Jenis Kelamin</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>M Alfin Hidayat</td>
+                <td>Korleko/LB.Haji/Lotim</td>
+                <td>2000-12-31</td>
+                <td>Laki-Laki</td>
+                <td>alfin@gmail.com</td> 
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Zainul Al Qusaery</td>
+                <td>Sepit/Keruak/Lotim</td>
+                <td>2022-11-11</td>
+                <td>Laki-Laki</td>
+                <td>el@gmail.com</td> 
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Marwan Azhari</td>
+                <td>Semoyang/Praya Timur/Loteng</td>
+                <td>2000-12-08</td>
+                <td>Laki-Laki</td>
+                <td>Marwan@gmail.com</td> 
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Noviandi</td>
+                <td>Lekor/Janapria/Loteng</td>
+                <td>2000-10-11</td>
+                <td>Laki-Laki</td>
+                <td>nori@gmail.com</td> 
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Abdurrahman</td>
+                <td>DS.Menak/Kalijaga/Lotim</td>
+                <td>2021-06-21</td>
+                <td>Laki-Laki</td>
+                <td>rahman@gmail.com</td> 
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Asadullah Majdi</td>
+                <td>Jurang Jaler/Peraya/Loteng</td>
+                <td>2022-12-09</td>
+                <td>Laki-Laki</td>
+                <td>asadul@gmail.com</td> 
+            </tr>
+
+        </tbody>
+    </table>
+      
+    </div>
+  </body>
+</html>
